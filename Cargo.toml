@@ -10,8 +10,8 @@ repository = "https://github.com/RustyGecko/kits"
 keywords = ["kits", "bindings"]
 
 [features]
-stk3700 = ["emlib/stk3700", "modules/stk3700"]
-dk3750 = ["emlib/dk3750", "modules/dk3750"]
+stk3700 = ["modules/stk3700"]
+dk3750 = ["modules/dk3750"]
 
 [target.thumbv7m-none-eabi.dependencies.core]
 git = "https://github.com/RustyGecko/rust-core.git"
