@@ -1,4 +1,3 @@
-
 pub fn ebi_init() -> i32 {
     unsafe { BSP_EbiInit() }
 }

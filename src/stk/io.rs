@@ -1,4 +1,4 @@
-use gpio;
+use emlib::gpio;
 use modules::{GpioPin, Button, Led};
 
 pub static PB0: &'static Button = &GpioPin { port: gpio::Port::B, pin: 9 };
