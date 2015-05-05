@@ -9,9 +9,17 @@ repository = "https://github.com/RustyGecko/kits"
 
 keywords = ["kits", "bindings"]
 
+build = "build/kits.rs"
+
 [features]
 stk3700 = ["modules/stk3700"]
 dk3750 = ["modules/dk3750"]
+
+[build-dependencies]
+submodules = "0.1"
+
+[build-dependencies.gcc]
+git = "https://github.com/sondrele/gcc-rs.git"
 
 [target.thumbv7m-none-eabi.dependencies.core]
 git = "https://github.com/RustyGecko/rust-core.git"
