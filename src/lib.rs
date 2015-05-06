@@ -9,6 +9,8 @@ extern crate core;
 extern crate emlib;
 extern crate modules;
 
+#[cfg(feature = "stk3700")]
 pub mod stk;
 
+#[cfg(feature = "dk3750")]
 pub mod dk;
