@@ -24,11 +24,15 @@ fn compile_library() {
     kit_config(&mut config)
         .define("EFM32GG990F1024", None)
 
+        .flag("-mcpu=cortex-m3")
+        .flag("-mthumb")
+
         .include("efm32-common/CMSIS/Include")
         .include("efm32-common/Device/EFM32GG/Include")
         .include("efm32-common/emlib/inc")
         .include("efm32-common/kits/common/bsp/")
         .file("efm32-common/kits/common/bsp/bsp_trace.c")
+
         .compile("libkits.a");
 }
 
